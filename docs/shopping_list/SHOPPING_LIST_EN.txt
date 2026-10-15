@@ -1,0 +1,28 @@
+HomeMade2F140 gripper - hardware shopping list (1 gripper, steel 8.8 or A2 stainless)
+
+M3 socket head cap screws (ISO 4762 / DIN 912)
+   6 x M3 x 8
+   9 x M3 x 12
+   9 x M3 x 16
+  10 x M3 x 30
+   2 x M3 x 45
+
+M6 socket head cap screws (ISO 4762 / DIN 912)
+   4 x M6 x 75
+
+Nuts
+  30 x M3 nyloc lock nut (ISO 10511 / DIN 985)
+
+Washers
+  50 x M3 flat washer (ISO 7089 / DIN 125-A, 7 mm OD x 0.5 mm)
+
+Optional
+   1 x 6 x 12 mm dowel pin (ISO 8734)
+
+
+Part types needed
+- M3 socket head cap screws (5 lengths)
+- M6 socket head cap screws
+- M3 nyloc lock nuts
+- M3 flat washers
+- 6 mm dowel pin (optional)

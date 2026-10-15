@@ -1,0 +1,123 @@
+{
+ "project": "HomeMade2F140_v2",
+ "units": "mm, rad",
+ "source": "scripts/design.py (generated)",
+ "kinematics_urdf": {
+  "outer_pivot": [
+   -30.601,
+   54.905
+  ],
+  "inner_pivot": [
+   -12.7,
+   61.42
+  ],
+  "link_vector": [
+   99.9753876967673,
+   -2.2185253820701973
+  ],
+  "outer_finger_offset": [
+   18.21998610742,
+   26.0018192872234
+  ],
+  "theta0": 2.2957963267948966,
+  "pad_centre_if_frame": [
+   44.5,
+   -26.9
+  ],
+  "pad_size_u_v_x": [
+   76.0,
+   6.0,
+   14.0
+  ],
+  "sim_range": [
+   0.0,
+   0.7
+  ],
+  "mechanical_stops": [
+   -0.03,
+   0.705
+  ]
+ },
+ "layers_x": {
+  "outer_knuckle": 4.75,
+  "tower_wall": [
+   5.0,
+   11.0
+  ],
+  "inner_prong": [
+   11.5,
+   19.0
+  ],
+  "finger_body": 12.0,
+  "distal_fork_gap": 7.75,
+  "inner_finger": 7.5,
+  "crank": [
+   14.0,
+   19.0
+  ],
+  "rod": [
+   19.5,
+   24.5
+  ]
+ },
+ "gears": {
+  "module": 1.8,
+  "teeth_full": 34,
+  "pressure_angle_deg": 20,
+  "pitch_r": 30.6,
+  "backlash_per_tooth": 0.2,
+  "tooth_indices": [
+   -1,
+   5
+  ],
+  "stop_slot_r": 19.049698842763892
+ },
+ "drive": {
+  "servo_axis_yz": [
+   -14.698796093361487,
+   17.5
+  ],
+  "crank_r": 16.0,
+  "ear_r": 18.0,
+  "ear_angle0_deg": 200.0,
+  "rod_length": 43.71181933424247,
+  "servo_deg_at_stops": [
+   -1.960103745019037,
+   45.72015505910479
+  ]
+ },
+ "servo": {
+  "L": 40.0,
+  "W": 20.0,
+  "H": 40.5,
+  "axis_from_end": 9.8,
+  "flange_from_bottom": 27.3,
+  "flange_t": 3.2,
+  "ear_len": 54.0,
+  "slot_pitch_L": 48.6,
+  "slot_pitch_W": 9.9,
+  "top_to_horn_face": 5.5,
+  "horn_d": 25.0
+ },
+ "fasteners": {
+  "pivot_hole": 3.3,
+  "clearance_hole": 3.4,
+  "nut_trap_af": 5.7,
+  "ur_pcd": 50.0
+ },
+ "wrist_stack_z": {
+  "spacer_b": [
+   -35.0,
+   0.0
+  ],
+  "spacer_a": [
+   -72.2,
+   -35.0
+  ],
+  "cam": [
+   -83.8,
+   -72.2
+  ],
+  "flange": -77.2
+ }
+}

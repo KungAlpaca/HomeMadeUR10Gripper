@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Generated previews / scratch output of the scripts
+preview_*.png
+layers.png
+test*.pdf
+*.tmp
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Unity metadata (if files are copied from a Unity project)
+*.meta
+
+# Fusion local backups and lock files
+*.f3d.bak
+~$*
+
+# Local-only history (old first attempt, session notes)
+archive/

@@ -1,0 +1,49 @@
+HomeMade2F140 v2 - LISTA DE COMPRAS (solo tornilleria)
+=====================================================
+Para 1 gripper completo: dedos, base del servo, espaciadores A/B y camera mount.
+Material de impresion y servo DFRobot SER0062 (D5545GS) NO incluidos.
+Todo es acero (clase 8.8 o inoxidable A2), cabeza allen.
+
+TORNILLOS M3 - cabeza cilindrica allen ISO 4762 / DIN 912
+---------------------------------------------------------
+Cant.  Medida    Donde va
+  10   M3 x 30   pivotes de los outer knuckles (2), union outer knuckle-outer finger (4),
+                 pivote outer finger-inner finger (2), pivote inner knuckle-inner finger (2)
+   2   M3 x 45   pivotes de los inner knuckles (atraviesan toda la torre)
+   9   M3 x 16   pin manivela-biela (1), orejas del servo (4), pads/puntas (4)
+   9   M3 x 12   pin biela-oreja del inner knuckle (1), torre->caja (4), caja->espaciador B (4)
+   6   M3 x 8    camara RealSense D435i (2) + horn metalico->manivela (4, ver nota 3)
+
+TUERCAS M3
+----------
+  30   Tuerca autoblocante M3 (nyloc) ISO 10511 / DIN 985
+       (13 quedan cautivas en alojamientos hexagonales impresos; las demas, por fuera)
+
+ARANDELAS M3
+------------
+  50   Arandela plana M3 ISO 7089 / DIN 125-A (7 mm exterior x 0,5 mm)
+       38 obligatorias en pivotes y orejas del servo + 12 bajo cabezas en plastico
+
+TORNILLOS M6 (brida del robot UR, ISO 9409-1-50-4-M6, circulo de 50 mm)
+-----------------------------------------------------------------------
+   4   M6 x 75   cabeza cilindrica allen ISO 4762 / DIN 912
+                 Atraviesan espaciador B + espaciador A + camera mount y roscan en la brida del UR
+                 (entran ~6,8 mm en la brida).
+
+OPCIONAL
+--------
+   1   Pasador cilindrico 6 x 12 mm ISO 8734 (agujero de centrado de la brida UR en el camera mount)
+
+TOTALES (sin repuestos): 36 tornillos M3, 4 tornillos M6, 30 tuercas M3, 50 arandelas M3.
+Recomendado: comprar ~10 % extra de M3 (o el paquete minimo de cada medida).
+
+NOTAS
+-----
+1. Los pivotes usan el cuerpo del tornillo como eje. Si los consigues, mejor M3x30 y M3x45
+   parcialmente roscados (parte lisa sin rosca). Aprieta la nyloc solo hasta que no haya
+   juego axial y luego afloja un poco, para que gire libre.
+2. Medidas de llaves: allen 2,5 mm (M3) y 5 mm (M6); llave fija o de vaso de 5,5 mm (tuercas M3).
+3. La manivela es una pieza en blanco para taladrar usando el horn metalico del servo como
+   plantilla. Compra los M3x8 del horn solo si sus agujeros son M3; si el horn trae sus
+   propios tornillos, usalos.
+4. Antes de apretar los M6, confirma que la rosca de tu brida tiene al menos 7 mm de profundidad.

@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=crlf
+*.stl binary
+*.step binary
+*.f3d binary
+*.pdf binary
+*.png binary
+*.webp binary

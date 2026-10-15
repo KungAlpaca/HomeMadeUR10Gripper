@@ -1,0 +1,188 @@
+{
+ "Tower": {
+  "file": "parts/HomeMade2F140_Tower_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   82.7,
+   71.9,
+   52.0
+  ],
+  "volume_cm3": 57.09,
+  "bed_contact_mm2": 4984.0
+ },
+ "HousingBox": {
+  "file": "parts/HomeMade2F140_HousingBox_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   94.9,
+   86.7,
+   36.0
+  ],
+  "volume_cm3": 62.56,
+  "bed_contact_mm2": 5634.0
+ },
+ "SpacerB": {
+  "file": "parts/HomeMade2F140_SpacerB_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   75.0,
+   87.9,
+   35.0
+  ],
+  "volume_cm3": 159.19,
+  "bed_contact_mm2": 4647.0
+ },
+ "SpacerA": {
+  "file": "parts/HomeMade2F140_SpacerA_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   64.3,
+   81.5,
+   37.2
+  ],
+  "volume_cm3": 124.56,
+  "bed_contact_mm2": 3667.0
+ },
+ "CameraMount": {
+  "file": "parts/HomeMade2F140_CameraMount_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   143.2,
+   71.4,
+   11.6
+  ],
+  "volume_cm3": 72.53,
+  "bed_contact_mm2": 7507.0
+ },
+ "Crank": {
+  "file": "parts/HomeMade2F140_Crank_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   34.0,
+   26.0,
+   5.0
+  ],
+  "volume_cm3": 2.9,
+  "bed_contact_mm2": 580.0
+ },
+ "Rod": {
+  "file": "parts/HomeMade2F140_Rod_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   53.7,
+   10.0,
+   5.0
+  ],
+  "volume_cm3": 2.49,
+  "bed_contact_mm2": 499.0
+ },
+ "OuterKnuckle_L": {
+  "file": "parts/HomeMade2F140_OuterKnuckle_L_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   72.6,
+   34.8,
+   9.5
+  ],
+  "volume_cm3": 13.35,
+  "bed_contact_mm2": 1406.0
+ },
+ "OuterKnuckle_R": {
+  "file": "parts/HomeMade2F140_OuterKnuckle_R_x1.stl",
+  "qty": 1,
+  "size_mm": [
+   72.2,
+   34.5,
+   9.5
+  ],
+  "volume_cm3": 13.14,
+  "bed_contact_mm2": 1383.0
+ },
+ "InnerFinger": {
+  "file": "parts/HomeMade2F140_InnerFinger_x2.stl",
+  "qty": 2,
+  "size_mm": [
+   56.4,
+   31.0,
+   15.0
+  ],
+  "volume_cm3": 10.58,
+  "bed_contact_mm2": 720.0
+ },
+ "Fingertip": {
+  "file": "parts/HomeMade2F140_Fingertip_x2.stl",
+  "qty": 2,
+  "size_mm": [
+   76.0,
+   14.2,
+   12.0
+  ],
+  "volume_cm3": 8.39,
+  "bed_contact_mm2": 1064.0
+ },
+ "OuterFinger": {
+  "file": "parts/HomeMade2F140_OuterFinger_x2.stl",
+  "qty": 2,
+  "size_mm": [
+   100.5,
+   24.0,
+   15.0
+  ],
+  "volume_cm3": 25.49,
+  "bed_contact_mm2": 1980.0
+ },
+ "InnerKnuckle": {
+  "file": "parts/HomeMade2F140_InnerKnuckle_x2.stl",
+  "qty": 2,
+  "size_mm": [
+   114.0,
+   40.2,
+   28.9
+  ],
+  "volume_cm3": 29.74,
+  "bed_contact_mm2": 1940.0
+ },
+ "_plates": [
+  {
+   "file": "plates/HomeMade2F140_plate1_250x250.stl",
+   "parts": [
+    "SpacerB",
+    "HousingBox",
+    "SpacerA",
+    "Tower"
+   ]
+  },
+  {
+   "file": "plates/HomeMade2F140_plate2_250x250.stl",
+   "parts": [
+    "CameraMount",
+    "InnerKnuckle",
+    "InnerKnuckle",
+    "OuterKnuckle_L",
+    "OuterKnuckle_R",
+    "InnerFinger",
+    "InnerFinger",
+    "Crank",
+    "OuterFinger",
+    "OuterFinger",
+    "Fingertip"
+   ]
+  },
+  {
+   "file": "plates/HomeMade2F140_plate3_250x250.stl",
+   "parts": [
+    "Fingertip",
+    "Rod"
+   ]
+  }
+ ],
+ "_print_set": {
+  "file": "plates/HomeMade2F140_print_set_17pcs.stl",
+  "pieces": 17,
+  "extent_mm": [
+   281.7,
+   315.1,
+   52.0
+  ]
+ }
+}
