@@ -158,8 +158,8 @@ HW = dict([
     bolt('Bolt_O', 'static', O, X_WALL[1] - M3_CBORE[1] + 0.05, X_WALL[1] - M3_CBORE[1] + 0.05 + 3.0,
          X_WALL[1] - M3_CBORE[1] + 0.05 - 30, nut=(-X_WALL[1] - 4.5, -X_WALL[1] - 0.5),
          washers=[(-X_WALL[1] - 0.5, -X_WALL[1])]),
-    # inner pivot, head on -X prong, nyloc on +X (M3x45)
-    bolt('Bolt_I', 'static', I, -X_PRONG[1] - 3.5, -X_PRONG[1] - 0.5, -X_PRONG[1] - 0.5 + 45,
+    # inner pivot, head on -X prong, nyloc on +X (M3x50: 7 mm past the nut; M3x40 would not reach the nylon ring)
+    bolt('Bolt_I', 'static', I, -X_PRONG[1] - 3.5, -X_PRONG[1] - 0.5, -X_PRONG[1] - 0.5 + 50,
          nut=(X_PRONG[1] + 0.5, X_PRONG[1] + 4.5),
          washers=[(-X_PRONG[1] - 0.5, -X_PRONG[1]), (X_PRONG[1], X_PRONG[1] + 0.5),
                   (-X_PRONG[0], -X_WALL[1]), (X_WALL[1], X_PRONG[0])]),
@@ -234,7 +234,7 @@ PARTS['SpacerB'] = dict(group='static', twin=False, feats=[], zfeats=[
     (STACK['spacer_b'][0], STACK['spacer_b'][1], 'add', ('circle', (0.0, 0.0), 37.5)),
     (STACK['spacer_b'][0], STACK['spacer_b'][1], 'add', ('rect', 30.0, -15.0, 48.7, 15.0)),
 ] + [(STACK['spacer_b'][0] - 0.1, 0.1, 'cut', ('circle', p, 3.3)) for p in ur_points()]
-  + [(-9.0, 0.1, 'cut', ('circle', p, 5.5)) for p in ur_points()]
+  + [(-14.0, 0.1, 'cut', ('circle', p, 5.5)) for p in ur_points()]   # deep counterbore: M6x70 keeps 6.8 mm in the flange
   + [(-12.0, 0.1, 'cut', ('circle', s, M3_CLR / 2)) for s in BASE_SCREWS]
   + sum([nut_trap_z(s, -7.7, unit(s)) for s in BASE_SCREWS], []))
 
@@ -285,8 +285,8 @@ def _from_feats(carrier, name, feats, mirror=False):
 HW_CAD = [
     _from_feats('Tower', 'HW_M3x30_PivotO_L', HW['Bolt_O']['feats']),
     _from_feats('Tower', 'HW_M3x30_PivotO_R', HW['Bolt_O']['feats'], mirror=True),
-    _from_feats('Tower', 'HW_M3x45_PivotI_L', HW['Bolt_I']['feats']),
-    _from_feats('Tower', 'HW_M3x45_PivotI_R', HW['Bolt_I']['feats'], mirror=True),
+    _from_feats('Tower', 'HW_M3x50_PivotI_L', HW['Bolt_I']['feats']),
+    _from_feats('Tower', 'HW_M3x50_PivotI_R', HW['Bolt_I']['feats'], mirror=True),
     _from_feats('OuterFinger', 'HW_M3x30_J', HW['Bolt_J']['feats']),
     _from_feats('OuterFinger', 'HW_M3x30_J2', HW['Bolt_J2']['feats']),
     _from_feats('InnerFinger', 'HW_M3x30_P1', HW['Bolt_P1']['feats']),
@@ -312,9 +312,9 @@ for i, sc in enumerate(BASE_SCREWS):
         (FLOOR_T - 12.0, FLOOR_T, ('circle', 1.45)),
         (-7.6, -3.6, ('hex', NUT_AF, math.atan2(sc[1], sc[0])))]))
 for i, pt in enumerate(ur_points()):
-    HW_CAD.append(dict(carrier='SpacerB', name=f'HW_M6x75_Flange{i}', axis='z', c=pt, segs=[
-        (-9.0, -3.0, ('circle', 5.0)),
-        (-84.0, -9.0, ('circle', 2.95))]))
+    HW_CAD.append(dict(carrier='SpacerB', name=f'HW_M6x70_Flange{i}', axis='z', c=pt, segs=[
+        (-14.0, -8.0, ('circle', 5.0)),
+        (-84.0, -14.0, ('circle', 2.95))]))
 for i, cx in enumerate((-22.41, 22.59)):
     pt = cam((cx, 100.36))
     HW_CAD.append(dict(carrier='CameraMount', name=f'HW_M3x8_Camera{i}', axis='z', c=pt, segs=[

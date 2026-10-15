@@ -100,8 +100,8 @@ ISO 4762 socket head cap screws, steel 8.8 or A2:
 | M3 x 12 | 5 | 4 | **9** |
 | M3 x 16 | 9 | - | **9** |
 | M3 x 30 | 10 | - | **10** |
-| M3 x 45 | 2 | - | **2** |
-| M6 x 75 | - | 4 | **4** |
+| M3 x 50 | 2 | - | **2** |
+| M6 x 70 | - | 4 | **4** |
 | M3 nyloc nut (ISO 10511) | 26 | 4 | **30** |
 | M3 washer (ISO 7089, 7 x 0.5 mm) | 46 | 4 | **50** |
 | 6 x 12 mm dowel pin (optional) | - | 1 | **1** |

@@ -112,9 +112,10 @@ DFRobot specifies 500..2500 us for 180 deg, so the full stroke is about
   (-72.2..-35) -> SpacerB (-35..0) -> gripper. This matches
   `real_sim_wara_ur10e.urdf`: gripper base at tool_eef + 77.2, rotated 90 deg
   from the camera support.
-- 4 x M6 x 75 on the UR pattern (circle 50 mm, at -22.5 / 67.5 / 157.5 /
-  247.5 deg in the gripper frame) go from the counterbores in the top of
-  SpacerB, through the stack, into the flange, with about 6.8 mm of thread.
+- 4 x M6 x 70 on the UR pattern (circle 50 mm, at -22.5 / 67.5 / 157.5 /
+  247.5 deg in the gripper frame) go from the 14 mm deep Ø11 counterbores in
+  the top of SpacerB, through the stack, into the flange, with about 6.8 mm
+  of thread.
 - The box is screwed to SpacerB with 4 x M3 x 12 into captive nyloc nuts.
   The tower is screwed to the box with 4 x M3 x 12 into captive nyloc nuts.
 - Fingertip: 2 x M3 x 16 from the outer face of the inner finger into captive
@@ -145,7 +146,7 @@ DFRobot specifies 500..2500 us for 180 deg, so the full stroke is about
 
 ## 8. Assembly order
 
-1. SpacerB, SpacerA and CameraMount onto the flange with 4 x M6 x 75. Put the
+1. SpacerB, SpacerA and CameraMount onto the flange with 4 x M6 x 70. Put the
    M3 nuts into the SpacerB traps first.
 2. Box onto SpacerB (4 x M3 x 12 from inside the box). Nuts into the column
    traps.
@@ -159,7 +160,7 @@ DFRobot specifies 500..2500 us for 180 deg, so the full stroke is about
    then fit the O pivot bolts (M3 x 30).
 7. Fit the inner knuckles:
    - Put the M3 nyloc into the left ear pocket first.
-   - Fit the I pivot bolts (M3 x 45) through prong, washer, wall, the gear
+   - Fit the I pivot bolts (M3 x 50) through prong, washer, wall, the gear
      kidney slots, wall, washer and prong.
 8. Rod to ear: M3 x 12 from the rod side into the captive nut.
 9. Outer fingers to outer knuckles (2 x M3 x 30 each).

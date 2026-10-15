@@ -58,14 +58,14 @@ def both(name):
 
 
 # ---------------------------------------------------------------- groups of already-assembled items
-STACK = ['Flange', 'Cam', 'D435', 'SpA', 'SpB'] + sum([keys(f'HW_M6x75_Flange{i}') for i in range(4)], []) \
+STACK = ['Flange', 'Cam', 'D435', 'SpA', 'SpB'] + sum([keys(f'HW_M6x70_Flange{i}') for i in range(4)], []) \
     + sum([keys(f'HW_M3x8_Camera{i}') for i in range(2)], []) + [f'HW_M3x12_Base{i}:nut0' for i in range(4)]
 BOX = ['Box'] + [f'HW_M3x12_Tower{i}:nut0' for i in range(4)] \
     + sum([[f'HW_M3x12_Base{i}:bolt', f'HW_M3x12_Base{i}:hw'] for i in range(4)], [])
 DRIVE = ['Servo', 'Horn', 'Crank', 'Rod'] + keys('HW_M3x16_PinC')
 EARS = sum([keys(f'HW_M3x16_ServoEar{i}') for i in range(4)], [])
 TOWER0 = ['Tower', 'OK_L', 'OK_R'] + keys('HW_M3x30_PivotO_L') + keys('HW_M3x30_PivotO_R')
-IKS = ['IK_L', 'IK_R', 'HW_M3x12_PinK:nut0'] + keys('HW_M3x45_PivotI_L') + keys('HW_M3x45_PivotI_R')
+IKS = ['IK_L', 'IK_R', 'HW_M3x12_PinK:nut0'] + keys('HW_M3x50_PivotI_L') + keys('HW_M3x50_PivotI_R')
 OFS = ['OF_L', 'OF_R'] + sum([keys(n) for n in both('HW_M3x30_J') + both('HW_M3x30_J2')], [])
 IFS = ['IF_L', 'IF_R'] + sum([keys(n) for n in both('HW_M3x30_P1') + both('HW_M3x30_P2')], [])
 TIPS = ['FT_L', 'FT_R'] + sum([keys(n) for n in both('HW_M3x16_Pad0') + both('HW_M3x16_Pad1')], [])
@@ -112,7 +112,7 @@ step('Espaciadores A y B', ['Flange', 'Cam'],
      ['El bloque saliente de ambos espaciadores va hacia el brazo de la camara.'],
      focus=['Cam', 'SpA', 'SpB'], label_parts={'SpB': 'Espaciador B (paso 1)'}, hide=list(base_nuts))
 
-m6 = sum([keys(f'HW_M6x75_Flange{i}') for i in range(4)], [])
+m6 = sum([keys(f'HW_M6x70_Flange{i}') for i in range(4)], [])
 step('4 tornillos M6 a la brida', ['Flange', 'Cam', 'SpA', 'SpB'] + list(base_nuts), off(m6, Z * 95), (-55, 30),
      ['Aprieta en cruz. La cabeza queda hundida en el espaciador B.'], focus=['Cam', 'SpA', 'SpB'] + m6)
 
@@ -173,7 +173,7 @@ step('Inner knuckles', TOWER0, off(['IK_L', 'HW_M3x12_PinK:nut0'], Z * 45) | off
      ['Los brazos abrazan la torre por fuera. La oreja con tuerca queda del lado -Y, cara +X.'],
      hide=['HW_M3x12_PinK:nut0'])
 
-ik_hw = dict(**hw_explode('HW_M3x45_PivotI_L', Db=58), **hw_explode('HW_M3x45_PivotI_R', Db=58))
+ik_hw = dict(**hw_explode('HW_M3x50_PivotI_L', Db=58), **hw_explode('HW_M3x50_PivotI_R', Db=58))
 step('Pivotes de los inner knuckles', TOWER0 + ['IK_L', 'IK_R', 'HW_M3x12_PinK:nut0'], ik_hw, (-60, 22),
      ['Orden: brazo - arandela - pared - ranura del engrane - pared - arandela - brazo.'],
      focus=['Tower', 'IK_L', 'IK_R'] + list(ik_hw))
@@ -441,7 +441,7 @@ def page_inventory(pdf):
         tax = fig.add_axes([x0 + 0.01, y0 + 0.05, 0.16, 0.16], zorder=5); tax.imshow(tim); tax.axis('off')
         fig.text(x0 + 0.008, y0 + 0.028, f'{n}x', fontsize=14, fontweight='bold', zorder=50)
         fig.text(x0 + 0.05, y0 + 0.03, tr(names.get(k, PRETTY.get(I[k].kind, k))), fontsize=9, zorder=50)
-    hw = ['6x M3 x 8', '9x M3 x 12', '9x M3 x 16', '10x M3 x 30', '2x M3 x 45', '4x M6 x 75',
+    hw = ['6x M3 x 8', '9x M3 x 12', '9x M3 x 16', '10x M3 x 30', '2x M3 x 50', '4x M6 x 70',
           '30x tuerca M3 nyloc', '50x arandela M3 (7 x 0,5 mm)']
     fig.text(0.62, 0.355, tr('Tornilleria'), fontsize=14, fontweight='bold')
     for i, l in enumerate(hw):

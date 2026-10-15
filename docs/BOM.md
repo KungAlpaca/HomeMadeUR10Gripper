@@ -55,13 +55,15 @@ washers (ISO 7089, 7 mm OD x 0.5 mm).
 | M3 x 12 | 5 | 4 | **9** | rod-to-ear pin (1), tower to box (4); box to Spacer B (4) |
 | M3 x 16 | 9 | - | **9** | crank-rod pin (1), servo ears (4), fingertips (4) |
 | M3 x 30 | 10 | - | **10** | outer pivots (2), outer knuckle to outer finger (4), inner finger pivots (4) |
-| M3 x 45 | 2 | - | **2** | inner pivots (through prongs, walls and gear slots) |
-| M6 x 75 | - | 4 | **4** | UR flange (ISO 9409-1-50-4-M6) through the whole wrist stack |
+| M3 x 50 | 2 | - | **2** | inner pivots (through prongs, walls and gear slots; tip ends 7 mm past the nut) |
+| M6 x 70 | - | 4 | **4** | UR flange (ISO 9409-1-50-4-M6) through the whole wrist stack (heads in 14 mm deep counterbores) |
 | M3 nyloc nut | 26 | 4 | **30** | 13 of them are captive in printed hex pockets |
 | M3 washer | 46 | 4 | **50** | pivots, servo ears and under heads that sit on plastic |
 | 6 x 12 mm dowel pin, ISO 8734 (optional) | - | 1 | **1** | flange centring hole in the camera mount |
 
-Partially threaded M3 x 30 and M3 x 45 screws are preferred for the pivots.
+Partially threaded M3 x 30 and M3 x 50 screws are preferred for the pivots.
+Do not use M3 x 40 for the inner pivots: it ends inside the nyloc nut and the
+nylon ring would not lock.
 
 **Tools:** hex keys of 2.5 mm and 5 mm, and a 5.5 mm wrench for the M3 nuts.
 

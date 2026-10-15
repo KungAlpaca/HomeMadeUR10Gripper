@@ -5,10 +5,10 @@ M3 socket head cap screws (ISO 4762 / DIN 912)
    9 x M3 x 12
    9 x M3 x 16
   10 x M3 x 30
-   2 x M3 x 45
+   2 x M3 x 50
 
 M6 socket head cap screws (ISO 4762 / DIN 912)
-   4 x M6 x 75
+   4 x M6 x 70
 
 Nuts
   30 x M3 nyloc lock nut (ISO 10511 / DIN 985)

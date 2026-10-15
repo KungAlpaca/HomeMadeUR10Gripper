@@ -9,7 +9,7 @@ TORNILLOS M3 - cabeza cilindrica allen ISO 4762 / DIN 912
 Cant.  Medida    Donde va
   10   M3 x 30   pivotes de los outer knuckles (2), union outer knuckle-outer finger (4),
                  pivote outer finger-inner finger (2), pivote inner knuckle-inner finger (2)
-   2   M3 x 45   pivotes de los inner knuckles (atraviesan toda la torre)
+   2   M3 x 50   pivotes de los inner knuckles (atraviesan toda la torre; NO usar M3x40)
    9   M3 x 16   pin manivela-biela (1), orejas del servo (4), pads/puntas (4)
    9   M3 x 12   pin biela-oreja del inner knuckle (1), torre->caja (4), caja->espaciador B (4)
    6   M3 x 8    camara RealSense D435i (2) + horn metalico->manivela (4, ver nota 3)
@@ -26,7 +26,7 @@ ARANDELAS M3
 
 TORNILLOS M6 (brida del robot UR, ISO 9409-1-50-4-M6, circulo de 50 mm)
 -----------------------------------------------------------------------
-   4   M6 x 75   cabeza cilindrica allen ISO 4762 / DIN 912
+   4   M6 x 70   cabeza cilindrica allen ISO 4762 / DIN 912
                  Atraviesan espaciador B + espaciador A + camera mount y roscan en la brida del UR
                  (entran ~6,8 mm en la brida).
 
@@ -39,7 +39,7 @@ Recomendado: comprar ~10 % extra de M3 (o el paquete minimo de cada medida).
 
 NOTAS
 -----
-1. Los pivotes usan el cuerpo del tornillo como eje. Si los consigues, mejor M3x30 y M3x45
+1. Los pivotes usan el cuerpo del tornillo como eje. Si los consigues, mejor M3x30 y M3x50
    parcialmente roscados (parte lisa sin rosca). Aprieta la nyloc solo hasta que no haya
    juego axial y luego afloja un poco, para que gire libre.
 2. Medidas de llaves: allen 2,5 mm (M3) y 5 mm (M6); llave fija o de vaso de 5,5 mm (tuercas M3).
